@@ -292,6 +292,7 @@ export default defineConfig({
 			watch: {
 				ignored: ["**/package/**", "**/Firefly-docs/**"],
 			},
+			allowedHosts: true,
 		},
 		resolve: {
 			alias: {

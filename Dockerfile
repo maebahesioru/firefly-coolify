@@ -21,4 +21,4 @@ RUN pnpm run build
 EXPOSE 4321
 
 # Start with astro preview
-CMD ["pnpm", "run", "preview", "--host", "0.0.0.0", "--port", "4321"]
+CMD ["pnpm", "run", "preview", "--host", "0.0.0.0", "--allowed-hosts", "blog.hikamer.f5.si", "--port", "4321"]
