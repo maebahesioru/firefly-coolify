@@ -9,7 +9,7 @@ export const ja: Translation = {
 	[Key.searchNoResults]: "結果が見つかりません。",
 	[Key.searchTypeSomething]: "検索キーワードを入力してください。",
 	[Key.searchLoading]: "検索中...",
-	[Key.searchSummary]: "摘要",
+	[Key.searchSummary]: "概要",
 	[Key.searchContent]: "内容",
 	[Key.searchViewMore]: "さらに結果を表示 ({count} 件)",
 	[Key.other]: "その他",
@@ -212,7 +212,7 @@ export const ja: Translation = {
 	// RSSページ
 	[Key.rss]: "RSSフィード",
 	[Key.rssDescription]: "最新の更新を購読する",
-	[Key.rssSubtitle]: "RSSで購読して、最新の記事と更新を第一时间で取得する",
+	[Key.rssSubtitle]: "RSSで購読して、最新の記事と更新をいち早く取得する",
 	[Key.rssLink]: "RSSリンク",
 	[Key.rssCopyToReader]: "RSSリンクをリーダーにコピー",
 	[Key.rssCopyLink]: "リンクをコピー",
@@ -221,12 +221,12 @@ export const ja: Translation = {
 	[Key.rssWhatIsRSSDescription]:
 		"RSS（Really Simple Syndication）は、頻繁に更新されるコンテンツを公開するための標準形式です。RSSを使用すると：",
 	[Key.rssBenefit1]:
-		"手動で訪問することなく、最新のウェブサイトコンテンツを及时に取得",
+		"手動で訪問することなく、最新のウェブサイトコンテンツをリアルタイムで取得",
 	[Key.rssBenefit2]: "1か所で複数のウェブサイトの購読を管理",
 	[Key.rssBenefit3]: "重要な更新や記事を見逃すことを回避",
-	[Key.rssBenefit4]: "広告なしのクリーンな読書体験を楽しむ",
+	[Key.rssBenefit4]: "広告なしのクリーンな閲覧体験を楽しむ",
 	[Key.rssHowToUse]:
-		"Feedly、Inoreaderまたは他のRSSリーダーを使用してこのサイトを購読することを推奨します。",
+		"Feedly、Inoreaderまたは他のRSSリーダーを使ってこのサイトを購読することをおすすめします。",
 	[Key.rssCopied]: "RSSリンクがクリップボードにコピーされました！",
 	[Key.rssCopyFailed]: "コピーに失敗しました。手動でリンクをコピーしてください",
 
