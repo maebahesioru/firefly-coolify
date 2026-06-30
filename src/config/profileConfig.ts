@@ -2,48 +2,80 @@ import type { ProfileConfig } from "../types/profileConfig";
 
 export const profileConfig: ProfileConfig = {
 	// 头像
-	// 图片路径支持三种格式：
-	// 1. public 目录（以 "/" 开头，不优化）："/assets/images/avatar.webp"
-	// 2. src 目录（不以 "/" 开头，自动优化但会增加构建时间，推荐）："assets/images/avatar.webp"
-	// 3. 远程 URL："https://example.com/avatar.jpg"
-	avatar: "assets/images/avatar.avif",
+	avatar: "assets/images/avatar.png",
 
 	// 名字
-	name: "Firefly",
+	name: "十字架_mania",
 
 	// 个人签名
-	bio: "Hello, I'm Firefly.",
+	bio: "ヒカマーです",
 
-	// 链接配置
-	// 已经预装的图标集：fa7-brands，fa7-regular，fa7-solid，material-symbols，simple-icons
-	// 访问https://icones.js.org/ 获取图标代码，
-	// 如果想使用尚未包含相应的图标集，则需要安装它
-	// `pnpm add @iconify-json/<icon-set-name>`
-	// showName: true 时显示图标和名称，false 时只显示图标
 	links: [
 		{
-			name: "qq",
-			icon: "fa7-brands:qq",
-			url: "https://qm.qq.com/q/ZGsFa8qX2G",
-			showName: false,
+			name: "Email",
+			icon: "fa7-solid:envelope",
+			url: "mailto:pikomaeba@gmail.com",
+			showName: true,
+		},
+		{
+			name: "X",
+			icon: "fa7-brands:x-twitter",
+			url: "https://x.com/maebahesioru2",
+			showName: true,
+		},
+		{
+			name: "X (sub)",
+			icon: "fa7-brands:x-twitter",
+			url: "https://x.com/okubahesioru",
+			showName: true,
+		},
+		{
+			name: "X (ふくあか)",
+			icon: "fa7-brands:x-twitter",
+			url: "https://x.com/hikain_lib",
+			showName: true,
+		},
+		{
+			name: "YouTube",
+			icon: "fa7-brands:youtube",
+			url: "https://www.youtube.com/@maebahesioru",
+			showName: true,
+		},
+		{
+			name: "YouTube切り抜き",
+			icon: "fa7-brands:youtube",
+			url: "https://www.youtube.com/@%E3%83%92%E3%82%AB%E3%83%9E%E3%83%BC%E7%95%8C%E9%9A%88%E3%81%AE%E3%82%B9%E3%83%9A%E3%83%BC%E3%82%B9%E5%88%87%E3%82%8A%E6%8A%9C%E3%81%8D",
+			showName: true,
+		},
+		{
+			name: "YouTube保管庫",
+			icon: "fa7-brands:youtube",
+			url: "https://www.youtube.com/@%E3%83%92%E3%82%AB%E3%83%9E%E3%83%BC%E3%82%BA%E3%82%B9%E3%83%9A%E3%83%BC%E3%82%B9%E4%BF%9D%E7%AE%A1%E5%BA%AB",
+			showName: true,
 		},
 		{
 			name: "GitHub",
 			icon: "fa7-brands:github",
-			url: "https://github.com/CuteLeaf",
-			showName: false,
+			url: "https://github.com/maebahesioru",
+			showName: true,
 		},
 		{
-			name: "Email",
-			icon: "fa7-solid:envelope",
-			url: "mailto:xiaye@msn.com",
-			showName: false,
+			name: "Bluesky",
+			icon: "fa7-brands:bluesky",
+			url: "https://bsky.app/profile/maebahesioru.bsky.social",
+			showName: true,
+		},
+		{
+			name: "Pixiv",
+			icon: "simple-icons:pixiv",
+			url: "https://www.pixiv.net/users/98487652",
+			showName: true,
 		},
 		{
 			name: "RSS",
 			icon: "fa7-solid:rss",
 			url: "/rss/",
-			showName: false,
+			showName: true,
 		},
 	],
 };
