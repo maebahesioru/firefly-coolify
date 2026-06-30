@@ -14,7 +14,7 @@ export const sponsorConfig: SponsorConfig = {
     methods: [
         {
             name: "OFUSE",
-            icon: "simple-icons:ofuse",
+            icon: "fa7-solid:hand-holding-heart",
             qrCode: "/assets/images/sponsor/ofuse.png",
             link: "https://ofuse.me/maebahesioru",
             description: "OFUSEで支援する",
