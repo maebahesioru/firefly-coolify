@@ -1,79 +1,97 @@
 import type { SponsorConfig } from "../types/sponsorConfig";
 
 export const sponsorConfig: SponsorConfig = {
-	// 页面标题，如果留空则使用 i18n 中的翻译
-	title: "",
+    title: "",
+    description: "",
 
-	// 页面描述文本，如果留空则使用 i18n 中的翻译
-	description: "",
+    usage:
+        "サーバーの強化・コーディングAI代に使います。現状3万のミニPC(N100、RAM32GB、SSD500GB)で6つのサーバー(webサイト15個以上同時運営・ツイートアーカイブ・AIサーバー)を同時運営しています。もちろん寄付だけには頼らずバイトもしています。PayPayの方は残高カード機能があるのでそれを使えば寄付できます → https://paypay.ne.jp/article/vpc-howto/",
 
-	// 打赏用途说明
-	usage:
-		"您的打赏将用于服务器维护、内容创作和功能开发，帮助我持续提供优质内容。",
+    showSponsorsList: true,
+    showComment: true,
+    showButtonInPost: true,
 
-	// 是否显示打赏者列表
-	showSponsorsList: true,
+    methods: [
+        {
+            name: "OFUSE",
+            icon: "simple-icons:ofuse",
+            qrCode: "/assets/images/sponsor/ofuse.png",
+            link: "https://ofuse.me/maebahesioru",
+            description: "OFUSEで支援する",
+            enabled: true,
+        },
+    ],
 
-	// 是否显示评论区，需要先在commentConfig.ts启用评论系统
-	showComment: true,
-
-	// 是否在文章详情页底部显示打赏按钮
-	showButtonInPost: true,
-
-	// 打赏方式列表
-	methods: [
-		{
-			name: "支付宝",
-			icon: "fa7-brands:alipay",
-			// 收款码图片路径（需要放在 public 目录下）
-			qrCode: "/assets/images/sponsor/alipay.png",
-			link: "",
-			description: "使用 支付宝 扫码打赏",
-			enabled: true,
-		},
-		{
-			name: "微信",
-			icon: "fa7-brands:weixin",
-			qrCode: "/assets/images/sponsor/wechat.png",
-			link: "",
-			description: "使用 微信 扫码打赏",
-			enabled: true,
-		},
-		{
-			name: "ko-fi",
-			icon: "simple-icons:kofi",
-			qrCode: "",
-			link: "https://ko-fi.com/cuteleaf",
-			description: "Buy a Coffee for Firefly",
-			enabled: true,
-		},
-		{
-			name: "爱发电",
-			icon: "simple-icons:afdian",
-			qrCode: "",
-			link: "https://ifdian.net/a/cuteleaf",
-			description: "通过 爱发电 进行打赏",
-			enabled: true,
-		},
-	],
-
-	// 打赏者列表（可选）
-	sponsors: [
-		// 示例：已实名打赏者
-		{
-			name: "夏叶",
-			avatar:
-				"https://weavatar.com/avatar/d252655d40d6874417a720bad0a6c5f77f8f6a1fd2f882f8f338402dc37e4190?s=640",
-			amount: "¥50",
-			date: "2025-10-01",
-		},
-
-		// 示例：匿名打赏者
-		{
-			name: "匿名用户",
-			// avatar: "",
-			amount: "¥20",
-			date: "2025-10-01",
-		},
-	],
+    sponsors: [
+        {
+            name: "電動工具の夕ご飯デブデブみかんのランデブーさん",
+            amount: "¥100",
+            date: "2026-06-20",
+        },
+        {
+            name: "匿名さん",
+            amount: "¥550",
+            date: "2026-05-16",
+        },
+        {
+            name: "匿名さん",
+            amount: "¥100",
+            date: "2026-05-08",
+        },
+        {
+            name: "匿名さん",
+            amount: "¥330",
+            date: "2026-05-04",
+        },
+        {
+            name: "yaju&uを嗜んでるものさん",
+            amount: "¥100",
+            date: "2026-05-02",
+        },
+        {
+            name: "匿名さん",
+            amount: "¥100",
+            date: "2026-04-26",
+        },
+        {
+            name: "BOLIMANIさん",
+            amount: "¥330",
+            date: "2026-04-06",
+        },
+        {
+            name: "BOLIMANIさん",
+            amount: "¥550",
+            date: "2026-04-06",
+        },
+        {
+            name: "BOLIMANIさん",
+            amount: "¥1,100",
+            date: "2026-04-06",
+        },
+        {
+            name: "匿名さん",
+            amount: "¥100",
+            date: "2026-04-06",
+        },
+        {
+            name: "SAENSキンbotさん",
+            amount: "¥100",
+            date: "2026-04-05",
+        },
+        {
+            name: "エビマニさん",
+            amount: "¥330",
+            date: "2026-04-04",
+        },
+        {
+            name: "ガ、キマニさん",
+            amount: "¥1,100",
+            date: "2026-03-24",
+        },
+        {
+            name: "mondaさん",
+            amount: "¥100",
+            date: "2026-03-23",
+        },
+    ],
 };
