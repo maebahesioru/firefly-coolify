@@ -1,7 +1,5 @@
 FROM node:23-bookworm
 
-FROM node:23-bookworm
-
 RUN apt-get update && apt-get install -y --no-install-recommends libvips-dev build-essential python3 && rm -rf /var/lib/apt/lists/*
 
 RUN npm install -g pnpm@9
