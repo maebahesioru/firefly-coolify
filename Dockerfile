@@ -8,9 +8,7 @@ WORKDIR /app
 
 COPY package.json pnpm-lock.yaml .npmrc ./
 
-RUN pnpm install
-
-RUN npm install node-addon-api && npm rebuild --build-from-source sharp
+RUN pnpm install --ignore-scripts && pnpm rebuild sharp
 
 # Copy source
 COPY . .
