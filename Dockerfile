@@ -1,6 +1,8 @@
 FROM node:23-bookworm
 
-RUN apt-get update && apt-get install -y --no-install-recommends libvips-dev && rm -rf /var/lib/apt/lists/*
+FROM node:23-bookworm
+
+RUN apt-get update && apt-get install -y --no-install-recommends libvips-dev build-essential python3 && rm -rf /var/lib/apt/lists/*
 
 RUN npm install -g pnpm@9
 
@@ -9,6 +11,8 @@ WORKDIR /app
 COPY package.json pnpm-lock.yaml .npmrc ./
 
 RUN pnpm install
+
+RUN npm rebuild --build-from-source sharp
 
 # Copy source
 COPY . .
