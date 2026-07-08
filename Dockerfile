@@ -1,14 +1,13 @@
 FROM node:23-bookworm
 
-# Install pnpm
+RUN apt-get update && apt-get install -y --no-install-recommends libvips-dev && rm -rf /var/lib/apt/lists/*
+
 RUN npm install -g pnpm@9
 
 WORKDIR /app
 
-# Copy package files
 COPY package.json pnpm-lock.yaml .npmrc ./
 
-# Install dependencies (no frozen lockfile to allow platform-specific resolution)
 RUN pnpm install
 
 # Copy source
