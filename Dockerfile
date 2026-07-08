@@ -10,7 +10,7 @@ COPY package.json pnpm-lock.yaml .npmrc ./
 
 RUN pnpm install
 
-RUN npm rebuild --build-from-source sharp
+RUN npm install node-addon-api && npm rebuild --build-from-source sharp
 
 # Copy source
 COPY . .
